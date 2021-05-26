@@ -1,4 +1,3 @@
-#new
 sudo: required
 services:
   - docker
