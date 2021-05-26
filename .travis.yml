@@ -18,7 +18,7 @@ before_install:
   - docker build -t kmanek/react-test -f ./client/Dockerfile.dev ./client
 
 script:
-  - docker run -r CI=true kmanek/react-test npm test
+  - docker run -e CI=true kmanek/react-test npm test
 
 deploy:
   provider: script
